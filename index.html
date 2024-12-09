@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Health Point</title>
+
+</head>
+
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Health<span>Point</span></div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointments">Appointments</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section home">
+            <h1>Welcome to Health Point</h1>
+            <p>Your Health is Our Priority</p>
+            <button class="cta-button">Book Appointment</button>
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="doctors" class="section doctors">
+            <h2>Our Doctors</h2>
+            <div class="doctor-grid">
+                <div class="doctor-card">
+                    <img src="./images/d1.jpg" class="doc" alt="Doctor 1">
+                    <div class="doctor-info">
+                        <h3>Dr. John Smith</h3>
+                        <p>Cardiologist</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/d4.jpg" class="doc" alt="Doctor 2">
+                    <div class="doctor-info">
+                        <h3>Dr. Sarah Johnson</h3>
+                        <p>Pediatrician</p>
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="./images/d3.jpg" class="doc" alt="Doctor 3">
+                    <div class="doctor-info">
+                        <h3>Dr. Michael Brown</h3>
+                        <p>Neurologist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Area with Sidebar -->
+        <div class="content-wrapper">
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Appointments Section -->
+                <section id="appointments" class="section appointments">
+                    <h2>Book an Appointment</h2>
+                    <form class="appointment-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor">Select Doctor</label>
+                            <select id="doctor" required>
+                                <option value="">Choose a doctor</option>
+                                <option value="dr-smith">Dr. John Smith</option>
+                                <option value="dr-johnson">Dr. Sarah Johnson</option>
+                                <option value="dr-brown">Dr. Michael Brown</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <button type="submit">Submit Appointment</button>
+                    </form>
+                </section>
+
+            </div>
+
+            <!-- Sidebar Widget -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Emergency Contact</h3>
+                    <p class="emergency-phone">Emergency: (800) 123-4567</p>
+                </div>
+
+                <div class="widget">
+                    <h3>Working Hours</h3>
+                    <ul class="working-hours">
+                        <li><span>Monday - Friday:</span> 8:00 AM - 8:00 PM</li>
+                        <li><span>Saturday:</span> 9:00 AM - 5:00 PM</li>
+                        <li><span>Sunday:</span> Emergency Only</li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Latest News</h3>
+                    <ul class="news-list">
+                        <li>
+                            <h4>New Medical Technology Arrival</h4>
+                            <p>State-of-the-art MRI machine now available</p>
+                        </li>
+                        <li>
+                            <h4>Free Health Check-up Camp</h4>
+                            <p>Join us this weekend for free health screenings</p>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Cardiology</h3>
+                    <p>Comprehensive heart care services</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Neurology</h3>
+                    <p>Expert neurological treatments</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Pediatrics</h3>
+                    <p>Specialized care for children</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About HealthPoint</h3>
+                <p>Providing quality healthcare services since 1995. Your trusted partner in health and wellness.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#doctors">Our Doctors</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#appointments">Book Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <address>
+                    <p>123 Healthcare Avenue</p>
+                    <p>Medical District, City 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@healthpoint.com</p>
+                </address>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 HealthPoint. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
